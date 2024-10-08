@@ -1,0 +1,29 @@
+{
+  "name": "hopverkefni1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch styles:dist/css",
+    "serve": "browser-sync start --server --files 'dist/css/*.css, *.html'",
+    "lint": "stylelint styles/*.scss --fix",
+    "dev": "concurrently \"npm run sass\" \"npm run serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HFG88/Episode-IV-A-New-Repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HFG88/Episode-IV-A-New-Repo/issues"
+  },
+  "homepage": "https://github.com/HFG88/Episode-IV-A-New-Repo#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.0.1",
+    "sass": "^1.79.4",
+    "stylelint-config-sass-guidelines": "^12.1.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}
