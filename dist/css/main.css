@@ -93,11 +93,6 @@ html {
   background-color: var(--color-background-form);
 }
 
-header,
-.wrapper {
-  animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
-}
-
 /**
    * Eftirfarandi setur upp grunn umbrot (layout) síðu með flexbox.
    * Við förum yfir flexbox í viku 4 en þangað til er hægt að nota þetta
@@ -143,14 +138,6 @@ header,
   }
   .wrapper .wrapper-main {
     grid-column: span 10;
-  }
-}
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 :root {
