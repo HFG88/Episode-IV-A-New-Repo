@@ -1,3 +1,28 @@
-
+@charset "UTF-8";
+:root {
+  /* Grunn leturstærð */
+  --font-size-base: 12px;
+  /* Placeholder nöfn fyrir leturstærðir 18 og 20 */
+  /* 18px */
+  --font-size-big: 1.5rem;
+  /* 20 px */
+  --font-size-bigger: var(--gutter);
+  /* Gutter í mobile. Verður svo 30 seinna og
+  þá er spurning hvort við viljum hafa annað variable
+  sem heitir --gutter-desktop eða hvort við viljum bara
+  breyta --gutter í 30px í media. Ég hugsa að það sé
+  mögulega hreinni aðferð að gera það í media en ég
+  er ekki viss ennþá */
+  --gutter: 20px;
+  /* Offset virðist vera minimum 15px í mobile ef við tökum ekki Hero með. Hero er ekki með offset */
+  --offset: 15px;
+  /* Bil á milli eininga */
+  /* Milli card */
+  --vertical-space: var(--gutter);
+  /* Milli stærri eininga */
+  --vertical-space-large: calc(var(--gutter) * 2);
+  --background-color: #0000;
+  --width-offset: calc(100% - calc(var(--offset) * 2));
+}
 
 /*# sourceMappingURL=config.css.map */
