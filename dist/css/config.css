@@ -7,6 +7,13 @@
   --font-size-big: 1.5rem;
   /* 20 px */
   --font-size-bigger: var(--gutter);
+  --spacing: 1rem;
+  --vertical-space: calc(var(--gutter) * 1);
+  --vertical-space-large: calc(var(--gutter) * 1.5);
+  --border-width: 1px;
+  --border-radius-regular: 5px;
+  --border-radius-image: 10px;
+  --border-regular: 1px solid #000;
   /* Gutter í mobile. Verður svo 30 seinna og
   þá er spurning hvort við viljum hafa annað variable
   sem heitir --gutter-desktop eða hvort við viljum bara
@@ -16,6 +23,7 @@
   --gutter: 20px;
   /* Offset virðist vera minimum 15px í mobile ef við tökum ekki Hero með. Hero er ekki með offset */
   --offset: 15px;
+  --columns: 12;
   /* Bil á milli eininga */
   /* Milli card */
   --vertical-space: var(--gutter);
@@ -23,6 +31,17 @@
   --vertical-space-large: calc(var(--gutter) * 2);
   --background-color: #0000;
   --width-offset: calc(100% - calc(var(--offset) * 2));
+  /** Litir með nafni **/
+  --color-yellow: #f3dd99;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-purple: #ebd;
+  --color-purple-dark: #c9b;
+  /** Litir með notkun **/
+  --color-background-primary: var(--color-yellow);
+  --color-background-secondary: var(--color-purple);
+  --color-background-form: var(--color-white);
+  --color-border-with-background: var(--color-purple-dark);
 }
 
 /*# sourceMappingURL=config.css.map */

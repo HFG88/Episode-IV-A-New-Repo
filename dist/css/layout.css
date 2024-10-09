@@ -9,6 +9,18 @@
   width: 1px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  /* grid items eru miðjuð */
+  justify-items: center;
+  gap: var(--vertical-space);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background-form);
+}
+
 .wrapper-content {
   display: grid;
   grid-template-rows: auto;
