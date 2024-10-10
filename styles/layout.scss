@@ -1,54 +1,50 @@
 .sr-only:not(:focus, :active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
   
 
 
-  .wrapper {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
   
-    /* grid items eru miðjuð */
-    justify-items: center;
-    gap: var(--vertical-space);
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--color-background-form);
+  /* grid items eru miðjuð */
+  justify-items: center;
+  gap: var(--vertical-space);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(#fff);
     
-  }
+}
 
-  .wrapper-content{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
-  
+.wrapper-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-items: center;
+  gap: var(--vertical-space-large);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(#fff);
     
-    justify-items: center;
-    gap: var(--vertical-space-large);
-    width: 100%;
-    min-height: 100vh;
-  
-    background-color: var(--background-color);
-    
-  }
+}
 
-  .wrapper-nav{
-    /* TODO Láta það fljóta yfir öðru efni og stick to
+.wrapper-nav {
+  /* TODO Láta það fljóta yfir öðru efni og stick to
     top */
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .hero{
+.hero{
     
     
-  }
+}

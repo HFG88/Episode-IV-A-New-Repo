@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (width >= 700px) {
   .card {
     justify-content: center;
     grid-column: span 3;
@@ -19,7 +19,7 @@
 .linkar {
   float: right;
   text-decoration: none;
-  color: #E3CDB1;
+  color: #e3cdb1;
   margin-top: -3.5rem;
   margin-left: 15rem;
 }
@@ -46,14 +46,14 @@
 }
 
 /**
-   * notum nýja selectora! brotið niður
-   * .card            <- veljum öll .card
-   * :not(            <- nema, við viljum ef _ekki_...
-   *   :has(> .image) <- .image sem strangt barn .card
-   * )                <- endir á :not()
-   * > .content       <- sem er strax barn af .card
-   * Þ.e.a.s. fyrir .card sem hefur ekki .image, setja border + radíus á allt .content
-   */
+     * notum nýja selectora! brotið niður
+     * .card            <- veljum öll .card
+     * :not(            <- nema, við viljum ef _ekki_...
+     *   :has(> .image) <- .image sem strangt barn .card
+     * )                <- endir á :not()
+     * > .content       <- sem er strax barn af .card
+     * Þ.e.a.s. fyrir .card sem hefur ekki .image, setja border + radíus á allt .content
+     */
 .card:not(:has(> .image)) > .content {
   border: var(--border-regular);
   border-radius: var(--border-radius-regular);

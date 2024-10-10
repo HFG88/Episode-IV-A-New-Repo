@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (width >= 700px) {
   .cards > .content {
     grid-template-columns: repeat(calc(var(--columns) - 2), 1fr);
     grid-template-rows: auto;

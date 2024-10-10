@@ -18,7 +18,7 @@
   gap: var(--vertical-space);
   width: 100%;
   min-height: 100vh;
-  background-color: var(--color-background-form);
+  background-color: var(#fff);
 }
 
 .wrapper-content {
@@ -29,12 +29,12 @@
   gap: var(--vertical-space-large);
   width: 100%;
   min-height: 100vh;
-  background-color: var(--background-color);
+  background-color: var(#fff);
 }
 
 .wrapper-nav {
   /* TODO Láta það fljóta yfir öðru efni og stick to
-  top */
+    top */
   width: 100%;
   display: flex;
   justify-content: space-between;
