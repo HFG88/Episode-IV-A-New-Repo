@@ -22,7 +22,7 @@
 
 .wrapper-nav {
   /* TODO Láta það fljóta yfir öðru efni og stick to
-  top */
+    top */
   width: 100%;
   display: flex;
   justify-content: space-between;

@@ -8,11 +8,11 @@
   /* 20 px */
   --font-size-bigger: var(--gutter);
   /* Gutter í mobile. Verður svo 30 seinna og
-  þá er spurning hvort við viljum hafa annað variable
-  sem heitir --gutter-desktop eða hvort við viljum bara
-  breyta --gutter í 30px í media. Ég hugsa að það sé
-  mögulega hreinni aðferð að gera það í media en ég
-  er ekki viss ennþá */
+    þá er spurning hvort við viljum hafa annað variable
+    sem heitir --gutter-desktop eða hvort við viljum bara
+    breyta --gutter í 30px í media. Ég hugsa að það sé
+    mögulega hreinni aðferð að gera það í media en ég
+    er ekki viss ennþá */
   --gutter: 20px;
   /* Offset virðist vera minimum 15px í mobile ef við tökum ekki Hero með. Hero er ekki með offset */
   --offset: 15px;
@@ -22,6 +22,10 @@
   /* Milli stærri eininga */
   --vertical-space-large: calc(var(--gutter) * 2);
   --background-color: #0000;
+  --text-color: #000;
+  --hover-color: #f0f0f0;
+  --navbar-color: #ffffff;
+  --sidebar-color: #fafafa;
   --width-offset: calc(100% - calc(var(--offset) * 2));
 }
 
@@ -48,10 +52,108 @@
 
 .wrapper-nav {
   /* TODO Láta það fljóta yfir öðru efni og stick to
-  top */
+    top */
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: var(--navbar-color);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+nav a:hover {
+  background-color: var(--hover-color);
+}
+
+.navBar {
+  background-color: var(--navbar-color);
+  position: fixed;
+  z-index: 999;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 998;
+  width: 100%;
+  background-color: var(--sidebar-color);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuButton {
+  display: block;
+}
+
+.exitButton {
+  display: none;
+}
+
+.hideOnMobile {
+  display: none;
+}
+
+.menuButton {
+  display: block;
+}
+
+@media (min-width: 550px) {
+  .menuButton {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  .exitButton {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
