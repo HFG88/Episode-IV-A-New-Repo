@@ -10,6 +10,9 @@
   /* 20 px */
   --font-size-bigger: var(--gutter);
 
+  /* 60 px */
+  --font-size-hamburger: 60px;
+
 
   /* Gutter í mobile. Verður svo 30 seinna og
     þá er spurning hvort við viljum hafa annað variable
@@ -31,10 +34,9 @@
   /* Milli stærri eininga */
   --vertical-space-large: calc(var(--gutter) * 2);
   --background-color: #0000;
-  --text-color: #000;
   --hover-color: #f0f0f0;
-  --navbar-color: #ffffff;
-  --sidebar-color: #fafafa;
+  --nav-color: #ffffff;
+  --hamburger-color: #fafafa;
 
 
 
