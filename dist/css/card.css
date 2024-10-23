@@ -16,14 +16,6 @@
   width: 100%;
 }
 
-.linkar {
-  float: right;
-  text-decoration: none;
-  color: #e3cdb1;
-  margin-top: -3.5rem;
-  margin-left: 15rem;
-}
-
 .card > .image img {
   display: block;
   border-top-left-radius: var(--border-radius-regular);
