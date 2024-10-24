@@ -1,32 +1,25 @@
 .sr-only:not(:focus, :active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
-  .wrapper-content{
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
-  
-    
-    justify-items: center;
-    gap: var(--vertical-space-large);
-    width: 100%;
-    min-height: 100vh;
-  
-    background-color: var(--background-color);
-    
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.wrapper-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  justify-items: center;
+  gap: var(--vertical-space-large);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
 }
 
-.wrapper-nav {
-  /* TODO Láta það fljóta yfir öðru efni og stick to
-    top */width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 10000;
-  }
+header {
+  background-color: var(--nav-color);
+  position: fixed;
+  width: 100%;
+}

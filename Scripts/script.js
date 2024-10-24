@@ -1,12 +1,11 @@
-const navElement = document.querySelector(".nav");
-const hamburgerElement = document.querySelector(".hamburger");
+const navElement = document.getElementById('nav');
+const hamburgerElement = document.querySelector('.hamburger');
+const hamburgerImage = document.getElementById('burger');
+const xImage = document.getElementById('x');
 
 hamburgerElement.addEventListener('click', () => {
-    navElement.classList.toggle("nav--open");
-    hamburgerElement.classList.toggle("hamburger--open");
-});
-
-navElement.addEventListener('click', () => {
-    navElement.classList.remove("nav--open");
-    hamburgerElement.classList.remove("hamburger--open");
+    hamburgerImage.classList.toggle('hidden');
+    xImage.classList.toggle('hidden');
+    navElement.classList.toggle('hidden');
+    console.log('Clicked hamburger');
 });
