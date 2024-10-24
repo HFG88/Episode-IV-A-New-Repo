@@ -1,24 +1,24 @@
 html {
-    /* Reiknum stærð á öllum boxum sem border-box */
-    box-sizing: border-box;
-  
-    /* Grunn leturstærð: 16px */
-    font-size: var(--font-size-base);
-  
-    /* Til að transition sé ekki frá hvítum */
-    background-color: var(--background-color);
-  
-    /* Úr grid */
-    position: relative;
-  }
+  /* Reiknum stærð á öllum boxum sem border-box */
+  box-sizing: border-box;
 
-  /* Fjarlægir margin og padding af öllu */
+  /* Grunn leturstærð: 16px */
+  font-size: var(--font-size-base);
+
+  /* Til að transition sé ekki frá hvítum */
+  background-color: var(--background-color);
+
+  /* Úr grid */
+  position: relative;
+}
+
+/* Fjarlægir margin og padding af öllu */
 * {
-    margin: 0;
-    padding: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
 
-  /* Allt erfir border-box */
+/* Allt erfir border-box */
 *,
 *::before,
 *::after {
@@ -27,11 +27,19 @@ html {
 
 /** Myndir taka aldrei meira pláss en foreldri skilgreinir **/
 img {
-    max-width: 100%;
-  }
-  
-  /** Litur á hlekkjum erfist frá foreldri **/
-  a {
-    color: inherit;
-  }
-  
+  max-width: 100%;
+}
+
+/** Litur á hlekkjum erfist frá foreldri **/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
