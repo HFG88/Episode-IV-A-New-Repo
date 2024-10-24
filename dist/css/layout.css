@@ -1,31 +1,17 @@
-@charset "UTF-8";
-.sr-only:not(:focus, :active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+/* Error: expected "{".
+ *   ,
+ * 3 |   clip: rect(0 0 0 0);
+ *   |                      ^
+ *   '
+ *   styles\layout.scss 3:22  root stylesheet */
 
-.wrapper-content {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 100%;
-  justify-items: center;
-  gap: var(--vertical-space-large);
-  width: 100%;
-  min-height: 100vh;
-  background-color: var(--background-color);
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 3 \2502    clip: rect(0 0 0 0);\d\a   \2502                       ^\a   \2575 \a   styles\\layout.scss 3:22  root stylesheet';
 }
-
-.wrapper-nav {
-  /* TODO Láta það fljóta yfir öðru efni og stick to
-    top */
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-/*# sourceMappingURL=layout.css.map */

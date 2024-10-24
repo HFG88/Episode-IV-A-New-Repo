@@ -12,3 +12,5 @@ Létt lýsing á uppsetningu verkefnis:
 Upplýsingar um alla sem unnu verkefni:
 - Nöfn:                     HÍ notendanöfn:      GitHub notendanöfn:
 Hermann Freyr Guðmundsson   HFG8                 HFG88
+Ásdís Halla Guðmundsdóttir  AHG38                asdishalla
+Dómald Dagur Dómaldsson     DDD2                 Domald-d

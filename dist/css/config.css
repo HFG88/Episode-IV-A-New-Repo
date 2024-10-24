@@ -1,33 +1,17 @@
-@charset "UTF-8";
-:root {
-  /* Grunn leturstærð */
-  --font-size-base: 12px;
-  /* Placeholder nöfn fyrir leturstærðir 18 og 20 */
-  /* 18px */
-  --font-size-big: 1.5rem;
-  /* 20 px */
-  --font-size-bigger: var(--gutter);
-  /* 60 px */
-  --font-size-hamburger: 60px;
-  /* Gutter í mobile. Verður svo 30 seinna og
-    þá er spurning hvort við viljum hafa annað variable
-    sem heitir --gutter-desktop eða hvort við viljum bara
-    breyta --gutter í 30px í media. Ég hugsa að það sé
-    mögulega hreinni aðferð að gera það í media en ég
-    er ekki viss ennþá */
-  --gutter: 20px;
-  /* Offset virðist vera minimum 15px í mobile ef við tökum ekki Hero með. Hero er ekki með offset */
-  --offset: 15px;
-  /* Bil á milli eininga */
-  /* Milli card */
-  --vertical-space: var(--gutter);
-  /* Milli stærri eininga */
-  --vertical-space-large: calc(var(--gutter) * 2);
-  --background-color: #0000;
-  --hover-color: #f0f0f0;
-  --nav-color: #ffffff;
-  --hamburger-color: #fafafa;
-  --width-offset: calc(100% - calc(var(--offset) * 2));
-}
+/* Error: expected "{".
+ *   ,
+ * 4 |   --font-size-base: 12px;
+ *   |                         ^
+ *   '
+ *   styles\config.scss 4:25  root stylesheet */
 
-/*# sourceMappingURL=config.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 4 \2502    --font-size-base: 12px;\d\a   \2502                          ^\a   \2575 \a   styles\\config.scss 4:25  root stylesheet';
+}
