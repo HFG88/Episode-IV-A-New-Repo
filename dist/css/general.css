@@ -1,0 +1,36 @@
+@charset "UTF-8";
+html {
+  /* Reiknum stærð á öllum boxum sem border-box */
+  box-sizing: border-box;
+  /* Grunn leturstærð: 16px */
+  font-size: var(--font-size-base);
+  /* Til að transition sé ekki frá hvítum */
+  background-color: var(--background-color);
+  /* Úr grid */
+  position: relative;
+}
+
+/* Fjarlægir margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Allt erfir border-box */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/** Myndir taka aldrei meira pláss en foreldri skilgreinir **/
+img {
+  max-width: 100%;
+}
+
+/** Litur á hlekkjum erfist frá foreldri **/
+a {
+  color: inherit;
+}
+
+/*# sourceMappingURL=general.css.map */
