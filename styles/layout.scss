@@ -19,7 +19,13 @@
 }
 
 header {
-  background-color: var(--nav-color);
+  background-color: var(--header-color);
   position: fixed;
   width: 100%;
+  z-index: 10000;
+}
+
+main {
+  width: 100%;
+  height: auto;
 }
